@@ -1,6 +1,12 @@
+
+import {useContext} from 'react'
+import {ThemeContext} from './ThemeContext'
 function Contact(){
+    const [theme, toggleTheme] = useContext(ThemeContext)
     return(
         <div>
+            <h3>The current theme is {theme}</h3>
+            <button onClick={toggleTheme}>Change Theme</button>
             <div className="gitHub">
                 <a href="http://">
                     <img src="" alt="GitHub Icon" />

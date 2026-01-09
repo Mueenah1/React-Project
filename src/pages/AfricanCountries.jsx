@@ -1,7 +1,10 @@
 import React, {useState} from 'react'
-
+import {useContext} from 'react'
+import {ThemeContext} from './ThemeContext'
 
 function AfricanContries(){
+    const [theme, toggleTheme] = useContext(ThemeContext)
+
     const [region, setRegion] = useState({
         westAfrica : ['Nigeria'],
         eastAfrica : ['Madagascar'],
@@ -39,6 +42,8 @@ function AfricanContries(){
 
     return(
         <div>
+            <h3>The current theme is {theme}</h3>
+            <button onClick={toggleTheme}>Change Theme</button>
             <h1>AFRICA</h1>
             <p>Countries within Five Regions</p>
             <div className='west' >

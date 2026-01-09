@@ -1,14 +1,17 @@
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import './App.css';
+import {ThemeProvider} from './pages/ThemeContext'
 import Home from './pages/Home';
 import AboutMe from  './pages/AboutMe';
 import Contact from './pages/Contact';
 import Project from './pages/Project';
 import AfricanCountries from './pages/AfricanCountries'
 
+
 function App() {
   return (
-    <BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
       <nav>
         <Link to='/' >Home</Link>
         <Link to='/about' >About Me</Link>
@@ -23,6 +26,7 @@ function App() {
         <Route path='/africanCountries' element ={<AfricanCountries />} />
       </Routes>
     </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
