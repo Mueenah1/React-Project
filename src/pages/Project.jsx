@@ -19,6 +19,9 @@ function Project(){
                 <li>
                     <Link to='/stopWatch'>StopWatch</Link>
                 </li>
+                <li>
+                    <Link to='/alarm'>Alarm</Link>
+                </li>
             </ol>
             <Outlet/>
         </div>

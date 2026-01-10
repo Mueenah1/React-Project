@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Project from './pages/Project';
 import AfricanCountries from './pages/AfricanCountries'
 import StopWatch from './pages/StopWatch'
+import Alarm from './pages/Alarm'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path='/project' element ={<Project />} />
         <Route path='/africanCountries' element ={<AfricanCountries />} />
         <Route path='/stopWatch' element = {<StopWatch/>} />
+        <Route path='/alarm' element = {<Alarm/>} />
       </Routes>
     </BrowserRouter>
     </ThemeProvider>
