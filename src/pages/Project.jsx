@@ -16,7 +16,9 @@ function Project(){
                         African Countries
                     </Link>
                 </li>
-                <li></li>
+                <li>
+                    <Link to='/stopWatch'>StopWatch</Link>
+                </li>
             </ol>
             <Outlet/>
         </div>
