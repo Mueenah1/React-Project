@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState, useRef} from 'react'
 
 function Alarm() {
     const [alarmTime, setAlarmTime] = useState();
