@@ -38,16 +38,17 @@ function Timer(){
     useEffect(
         () => {
             let count = duration()
-            if(count !== 0){
+            if(count >= 0){
                 setInterval(
                 ()=>{
-                    
                     count -=1
                     console.log(count)
                 }, 1000
             )
             }
-        }, [secondCountDownRef]
+            secondCountDownRef.current = count
+            console.log(secondCountDownRef)
+        }, [secondCountDownRef.current]
     )
     
 
