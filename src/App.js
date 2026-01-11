@@ -8,6 +8,7 @@ import Project from './pages/Project';
 import AfricanCountries from './pages/AfricanCountries'
 import StopWatch from './pages/StopWatch'
 import Alarm from './pages/Alarm'
+import Timer from './pages/Timer'
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/africanCountries' element ={<AfricanCountries />} />
         <Route path='/stopWatch' element = {<StopWatch/>} />
         <Route path='/alarm' element = {<Alarm/>} />
+        <Route path='/timer' element = {<Timer/>} />
       </Routes>
     </BrowserRouter>
     </ThemeProvider>
